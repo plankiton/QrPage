@@ -1,1 +1,1 @@
-web: gunicorn pirate:pirate
+web: gunicorn qrpage:qrpage
