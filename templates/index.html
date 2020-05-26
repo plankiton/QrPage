@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{{data['name']}}</title>
+        <link rel="stylesheet" href="/static/style.css" type="text/css" media="all">
+    </head>
+    <body>
+        <section>
+
+            <h1>{{data['name']}}</h1>
+            <h3>{{data['slogan']}}</h3>
+
+            <div id='desc' class="{{ 'hidden' if not data['description'] else '' }}">
+                <p>{{data['description']}}</p>
+            </div>
+
+            <div>
+                <p class="{{ 'hidden' if not data['instagram'] else '' }}">
+                    <a href="{{data['instagram_link']}}" target="_blank">
+                    <img class="{{ 'hidden' if not data['instagram'] else '' }}" src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/> <span>{{data['instagram']}}</span>
+                    </a>
+                </p>
+                <p class="{{ 'hidden' if not data['facebook'] else '' }}">
+                    <a href="{{data['facebook_link']}}" target="_blank">
+                        <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/> <span>{{data['facebook']}}</span>
+                    </a>
+                </p>
+                <p class="{{ 'hidden' if not data['whatsapp'] else '' }}">
+                    <a href="{{data['whatsapp_link']}}" target="_blank">
+                        <img src="https://img.icons8.com/officel/48/000000/whatsapp.png"/> <span>{{data['whatsapp']}}</span>
+                    </a>
+                </p>
+                <p class="{{ 'hidden' if not data['email'] else '' }}">
+                    <a href="{{data['email_link']}}" arget="_blank">
+                        <img src="https://img.icons8.com/color/48/000000/send-mass-email.png"/> <span>{{data['email']}}</span>
+                    </a>
+                </p>
+            </div>
+
+        </section>
+    </body>
+</html>

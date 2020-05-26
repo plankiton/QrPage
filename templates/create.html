@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Creador de link</title>
+        <link rel="stylesheet" href="/static/style.css" type="text/css" media="all">
+        <style type="text/css" media="screen">
+body{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    height: 100%;
+}
+h2 {
+    background: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%
+}
+
+input[type=text] {
+    border-radius: 3px;
+    border: none;
+    height: 30px;
+    width: 100%;
+    background: #eee;
+    text-align: center;
+}
+
+input[type=submit] {
+    border-radius: 3px;
+    border: none;
+    padding: 5px;
+    height: 30px;
+    width: 100%;
+    background: #eee;
+    text-align: center;
+}
+input[type=submit]:hover {
+    background: #ddd;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+p.title {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    background: #ddd;
+}
+
+        </style>
+    </head>
+    <body>
+        <section>
+
+            <h1>Criador de link</h1>
+
+            <div>
+                <form action='/' method="get" accept-charset="utf-8">
+                    <h2>Nome da empresa</h2>
+                    <p class="prog">
+                        <input type="text" placeholder='digite aqui' name="name" id="name" value="">
+                    </p>
+                    <h2>Slogan da empresa</h2>
+                    <p class="prog">
+                        <input type="text" placeholder='digite aqui' name="name" id="name" value="">
+                    </p>
+                    <h2>Descrição da empresa</h2>
+                    <p class="prog">
+                        <input type="text" placeholder='digite aqui' name="name" id="name" value="">
+                    </p>
+                    <br></br>
+
+                    <p class="title">
+                        <img src="https://img.icons8.com/fluent/48/000000/instagram-new.png"/> Instagram
+                    </p>
+                    <p>Username: <input type="text" name="instagram" id="instagram"/></p>
+                    <p>Link: <input type="text" name="instagram_link" id="instagram_link"/></p>
+                    <br></br>
+
+                    <p class="title">
+                        <img src="https://img.icons8.com/fluent/48/000000/facebook-new.png"/> facebook
+                    </p>
+                    <p>Nome: <input type="text" name="facebook" id="facebook"/></p>
+                    <p>Link: <input type="text" name="facebook_link" id="facebook_link"/></p>
+                    <br></br>
+
+                    <p class="title">
+                        <img src="https://img.icons8.com/officel/48/000000/whatsapp.png"/> WhatsApp
+                    </p>
+                    <p>Numero: <input type="text" name="whatsapp" id="whatsapp"/></p>
+                    <p>Link: <input type="text" name="whatsapp_link" id="whatsapp_link"/></p>
+                    <br></br>
+
+                    <p class="title">
+                        <img src="https://img.icons8.com/color/48/000000/send-mass-email.png"/> Email
+                    </p>
+                    <p>Email: <input type="text" name="email" id="email"/></p>
+                    <p>Link: <input type="text" name="email_link" id="email_link"/></p>
+                    <br></br>
+
+                    <p class="prog"><input type="submit" name="" id="" value="Gerar"></p>
+                </form>
+            </div>
+
+        </section>
+    </body>
+</html>
