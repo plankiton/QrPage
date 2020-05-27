@@ -10,7 +10,7 @@ def create():
 @qrpage.route('/', methods = ['POST', 'GET'])
 def index():
     data = request.args.to_dict()
-    data['slogan'] = data['sloganslogan'] if 'slogan' in data else None
+    data['slogan'] = data['slogan'] if 'slogan' in data else None
     data['description'] = data['description'] if 'description' in data else None
     data['instagram'] = data['instagram'] if 'instagram' in data else None
     data['whatsapp'] = data['whatsapp'] if 'whatsapp' in data else None
