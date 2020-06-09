@@ -23,4 +23,7 @@ def index():
 
     styles = data['styles'] = data['styles'] if 'styles' in data else '/static/style.css'
 
+    if not data['name']:
+        return render('create.html', styles=styles)
+
     return render('index.html', data=data, styles=styles)
