@@ -37,7 +37,7 @@ section {
     width: 80%;
 }
 
-p {
+section p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +48,7 @@ p {
     padding: 10px;
 }
 
-p img {
+section p img {
     height: 33px;
     width:  33px;
     padding-right: 10px;
@@ -59,8 +59,12 @@ p img {
     display: none !important;
 }
 
-a {
+section a {
     font-weight: bold;
     text-decoration: none;
     color: #333333;
+}
+
+footer {
+    margin-top: 10%;
 }
