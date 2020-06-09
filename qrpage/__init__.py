@@ -21,4 +21,6 @@ def index():
     data['email_link'] = data['email_link'] if 'email_link' in data else None
     data['name_link'] = data['name_link'] if 'name_link' in data else None
 
-    return render('index.html', data=data)
+    styles = data['styles'] = data['styles'] if 'styles' in data else '/static/style.css'
+
+    return render('index.html', data=data, styles=styles)
