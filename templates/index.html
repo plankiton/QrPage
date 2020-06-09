@@ -10,7 +10,7 @@
         <section>
 
             <h1>{{data['name']}}</h1>
-            <h3>{{data['slogan']}}</h3>
+            <h3 class="{{ 'hidden' if not data['slogan'] else '' }}">{{data['slogan']}}</h3>
 
             <div id='desc' class="{{ 'hidden' if not data['description'] else '' }}">
                 <p>{{data['description']}}</p>
