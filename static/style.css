@@ -1,7 +1,6 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     width: 100%;
     font-family: Calibri, Arial, Sans;
@@ -13,8 +12,11 @@ h1 {
     font-size: 50pt;
 }
 
-h1, h2 {
+h1, h2, h3 {
     text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    background: #eeeeee99;
 }
 
 .rede {
@@ -25,16 +27,8 @@ h1, h2 {
 section {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 90%;
-}
-
-#desc {
-    background: #eee;
-    border-radius: 10px;
-    padding: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 section p {
@@ -43,7 +37,7 @@ section p {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background: #eee;
+    background: #eeeeee99;
     border-radius: 10px;
     padding: 10px;
 }
@@ -53,6 +47,26 @@ section p img {
     width:  33px;
     padding-right: 10px;
     padding-left: 10px;
+}
+
+*::-webkit-scrollbar {
+    background: #5F461800;
+    width: 10px;
+    border-radius: 2px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #5F461800;
+    border-radius: 2px;
+    margin: 3px;
+    width: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #aaaaaa99;
+    border-radius: 3px;
+    margin: 2px;
+    width: 3px;
 }
 
 .hidden {
@@ -65,6 +79,18 @@ section a {
     color: #333333;
 }
 
+footer h3 {
+    background: none;
+}
+
 footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: #eeeeee99;
+    border-radius: 10px;
+    padding: 10px;
     margin-top: 10%;
 }
